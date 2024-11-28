@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="./src/css/contact.css">
-    <link rel="stylesheet" href="./src/css/about.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Adrián's Workspace</title>
 </head>
+
 <body>
     <header>
-        <nav class="navbar">
-            <ul>
+        <nav>
+            <ul class="nav-menu-list">
                 <li><a href="contact.html"><span class="nav-number">04. </span>Contact</a></li>
                 <li><a href="archive.html"><span class="nav-number">03. </span>Archive</a></li>
                 <li><a href="projects.html"><span class="nav-number">02. </span>Projects</a></li>
                 <li><a href="about.html"><span class="nav-number">01. </span>About</a></li>
-                <li id="home-icon"><a href="index.html"><img id="logo" src="./img/logogrupo.png" alt="home"></a></li>
             </ul>
+            <div id="logo-container">
+                <img id="logo" src="./img/logogrupo.png" alt="Logo" href="index.html">
+            </div>
         </nav>
     </header>
-    <main>
-        <div class="container">
-            <div class="text-section">
-                <div class="text-content">
-                    <h1>Get in Touch</h1>
-                    <p>Whether it's a job opportunity, an invite to coffee, or feedback on my portfolio, my inbox is open!</p>
-                </div>
+    <main class="container">
+        <div class="presentacion">
+            <span class="text1">Hi, my name is</span><br>
+            <span class="text2" id="color1">Adrián González.</span><br>
+            <span class="text2" id="color2">I secure the network</span><br>
+            <p class="text3">I'm a Cybersecurity Analyst based in Barcelona,<br>passionate about software development,<br>system
+                administration, and database management.</p>
+                <button class="DownloadCV">Download CV</button>
+        </div>
+        <div class="box">
+            <div class="fotoperfil">
+                <img id='profilepic' src="./img/foto.jpg" alt="sexyboy">
             </div>
-            <div class="form-section">
-                <div class="form-container">
-                    <form class="contact-form">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-    
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        
-                        <button type="submit">Send Message</button>
-                    </form>
-                </div>
+            <div class="logos">
+                <img id="logocisco" src="./img/logocisco.png">
+                <img id="logoubuntu" src="./img/logoubuntu.png">
+                <img id="logopackettracer" src="./img/logopackettracer.png">
+                <img id="logovirtualbox" src="./img/logovirtualbox.png">
+                <img id="logowindows" src="./img/logowindows.png">
             </div>
         </div>
     </main>
@@ -54,7 +53,7 @@
                 <div class="important-links">
                     <span>IMPORTANT LINKS</span>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="skills.html">Skills</a></li>
                         <li><a href="projects.html">Projects</a></li>
