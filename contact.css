@@ -1,0 +1,205 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    color: #8892b0;
+  }
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.text-section,
+.form-section {
+    padding: 30px;
+    flex: 1;
+}
+
+.text-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-content {
+    max-width: 80%;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ccd6f6;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    color: #8892b0;
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #8892b0;
+    font-family: "IBM Plex Mono", sans-serif !important;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    background-color: #0a192f;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #64ffda;
+    border-radius: 5px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.contact-form button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #64ffda;
+    background-color: #0a192fff;
+    border-color: #64ffda;
+    border-style:solid;
+    border-radius: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+}
+
+.contact-form button:hover {
+    background-color: #64ffda;
+    color: #0a192fff;
+}
+
+#logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    height: 75px;
+    width: 75px;
+}
+    
+#logo:hover {
+    cursor:pointer;
+    transform: scale(1.2);
+}
+    
+footer{
+    font-family: "IBM Plex Mono", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #c7d1f1ff;
+}
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+footer div section{
+    padding: 100px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0%;
+}
+
+.social-icons:hover {
+    transform: scale(1.1);
+}
+
+.social-icons{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease; /* Suaviza el cambio de tamaño */
+    cursor: pointer;
+}
+
+#footer-logo{
+    height: 150px;
+    width: 150px;
+}
+
+.footer-links{
+    list-style: none;
+    padding: 0%;
+}
+
+.important-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0%;
+}
+
+.footer-links li a{
+    text-decoration: none;
+    color: #c7d1f1ff;
+}
+
+.footer-links li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #c7d1f1ff; /* Color del enlace */
+    font-size: 16px; /* Tamaño del texto */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.footer-links li a:hover {
+    color: #007BFF; /* Cambia el color del texto al pasar el cursor */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
+}
+
+/* @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .text-section,
+    .form-section {
+        padding: 20px;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+} */

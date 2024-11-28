@@ -1,0 +1,264 @@
+/* CSS HEX 
+--cool-gray: #8892b0ff;
+--periwinkle: #c7d1f1ff;
+--aquamarine: #64ffdaff;
+--letras: dark-slate-gray: #22585eff;
+--background: oxford-blue: #0a192fff;
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+body{
+    background-color: #0a192fff;
+    color: #22585eff;
+}
+
+.nav-menu-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.nav-menu-list li{
+    float:right;
+
+}
+.nav-menu-list li a{
+    display: block;
+    padding: 15px;
+    margin: 30px;
+    text-decoration: none;
+    color: #c7d1f1ff;
+}
+
+.presentacion{
+    position: absolute;
+    top: 300px;
+    left: 75px;
+}
+
+.fotoperfil{
+    height: auto;
+    width: auto;
+}
+
+.box{  /*Caja de la foto de perfil y logos debajo de la foto*/
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 30%;
+    right: 15%;
+}
+
+.logos{
+    display: flex;
+    gap: 15px;
+
+}
+
+#logocisco{
+    height: 50px;
+    width: 50px;
+}
+
+#logoubuntu{
+    height: 50px;
+    width: 50px;
+}
+
+#logopackettracer{
+    height: 50px;
+    width: 50px;
+}
+
+#logovirtualbox{
+    height: 50px;
+    width: 50px;
+}
+
+#logowindows{
+    height: 50px;
+    width: 50px;
+}
+
+#logo-container {
+    position: relative; /* Define el marco de referencia */
+    width: 50px; /* Ajusta según necesites */
+    height: 50px;
+}
+
+#logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    height: 75px;
+    width: 75px;
+}
+    
+#logo:hover {
+    cursor:pointer;
+    transform: scale(1.2);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;height: 100vh;
+}
+
+
+
+.text1{
+    font-family: "IBM Plex Mono", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #64ffda;
+}
+
+.text2{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#color1{
+    color: #ccd6f6;
+}
+#color2{
+    color: #8892b0;
+}
+
+.text3{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #8892b0;
+}
+
+.DownloadCV{
+    font-family: "IBM Plex Mono", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #64ffda;
+    background-color: #0a192fff;
+    padding: 10px;
+    border-color: #64ffda;
+    border-style:solid;
+    border-radius: 3px;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.DownloadCV:hover {
+    background-color: #64ffda; /* Cambia el fondo al pasar el cursor */
+    color: #0a192fff; /* Cambia el texto al pasar el cursor */
+    border-color: #0a192fff; /* Cambia el borde */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+}
+.nav-menu-list li a{
+    font-family: "IBM Plex Mono", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ccd6f6;
+    cursor: pointer;
+}
+
+.nav-menu-list li a:hover{
+    color: #64ffda;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.nav-number{
+    color: #64ffda;
+}
+
+footer{
+    font-family: "IBM Plex Mono", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #c7d1f1ff;
+}
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+footer div section{
+    padding: 100px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0%;
+}
+
+.social-icons:hover {
+    transform: scale(1.1);
+}
+
+.social-icons{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease; /* Suaviza el cambio de tamaño */
+    cursor: pointer;
+}
+
+#footer-logo{
+    height: 150px;
+    width: 150px;
+}
+
+.footer-links{
+    list-style: none;
+    padding: 0%;
+}
+
+.important-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0%;
+}
+
+.footer-links li a{
+    text-decoration: none;
+    color: #c7d1f1ff;
+}
+
+.footer-links li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #c7d1f1ff; /* Color del enlace */
+    font-size: 16px; /* Tamaño del texto */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.footer-links li a:hover {
+    color: #007BFF; /* Cambia el color del texto al pasar el cursor */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
+}

@@ -1,0 +1,201 @@
+
+/* CSS HEX 
+General Backgroud: 0a192fff
+Title WHite: ccd6f6
+Title Grey: 8892b0
+Text Dark green: 22585eff
+Text Neon Green: 64ffda
+Nav menu color: c7d1f1ff
+
+*/
+
+/* Main is gonna have: Body, Nav menu, footer, */
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*-------------------------------------------------------------------------------------------------------------
+MAIN BODY CONTENT*/
+
+body{
+    background-color: #0a192fff;
+    color: #8892b0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------- */
+/*TYPES OF TEXTS FOR FORMATTING*/
+
+.title1{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    font-style: normal;
+    color: #ccd6f6;
+}
+
+.title2{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    font-style: normal;
+    color: #8892b0;
+}
+
+.mono-text{
+    font-family: "IBM Plex Mono", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #64ffda;
+}
+
+.global-text{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    color: #8892b0;
+}
+
+.copyright-text{
+    font-family: "IBM Plex Mono", serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    color: #A8B2D1;
+}
+
+/*-------------------------------------------------------------------------------------------------------------
+NAV MENU STYLING*/
+
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navbar ul li{
+    float:right;
+}
+
+.navbar ul li a{
+    display: block;
+    padding: 15px;
+    margin: 30px;
+    text-decoration: none;
+    color: #c7d1f1ff;
+    font-family: "IBM Plex Mono", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar ul li a:hover{
+    color: #64ffda;
+}
+
+#logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    height: 75px;
+    width: 75px;
+}
+    
+#logo:hover {
+    cursor:pointer;
+    transform: scale(1.2);
+}
+
+.nav-number{
+    color: #64ffda;
+}
+
+#home-icon{
+    float: left;
+}
+
+/*-------------------------------------------------------------------------------------------------------------
+FOOTER STYLING*/
+
+footer{
+    font-family: "IBM Plex Mono", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #c7d1f1ff;
+}
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+footer div section{
+    padding: 100px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0%;
+}
+
+.social-icons:hover {
+    transform: scale(1.1);
+}
+
+.social-icons{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease; /* Suaviza el cambio de tamaño */
+    cursor: pointer;
+}
+
+#footer-logo{
+    height: 150px;
+    width: 150px;
+}
+
+.footer-links{
+    list-style: none;
+    padding: 0%;
+}
+
+.important-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0%;
+}
+
+.footer-links li a{
+    text-decoration: none;
+    color: #c7d1f1ff;
+}
+
+.footer-links li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #c7d1f1ff; /* Color del enlace */
+    font-size: 16px; /* Tamaño del texto */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.footer-links li a:hover {
+    color: #007BFF; /* Cambia el color del texto al pasar el cursor */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
+}
