@@ -27,6 +27,11 @@ main{
     flex: 1;
 }
 
+.contact-form input,
+.contact-form textarea {
+    color: white;
+}
+
 .text-section {
     /* background-color: #f0f0f0; */
     display: flex;
@@ -97,6 +102,46 @@ main{
     background-color: #0056b3;
 }
 
+#footer-logo{
+    height: 150px;
+    width: 150px;
+}
+
+.footer-links{
+    list-style: none;
+    padding: 0%;
+}
+
+.important-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0%;
+}
+
+.footer-links li a{
+    text-decoration: none;
+    color: #c7d1f1ff;
+}
+
+.footer-links li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #c7d1f1ff; /* Color del enlace */
+    font-size: 16px; /* Tamaño del texto */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.footer-links li a:hover {
+    color: #007BFF; /* Cambia el color del texto al pasar el cursor */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
+}
 /* @media (max-width: 768px) {
     .container {
         flex-direction: column;
